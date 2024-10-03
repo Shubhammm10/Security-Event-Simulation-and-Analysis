@@ -22,8 +22,10 @@ To capture and forward security events from Kali to Elastic SIEM, I installed th
      Add integration> Elastic defend>Add Elastic defend> complete all the information
 
     ![img3.1](/Images/3.1.png)
-
+    ![img3.1](/Images/3.2.png)
+    ![img3.1](/Images/3.3.png)
      After installing the Elastic Agent, I was directed to a page with commands that I copied and executed in the Kali terminal.
+     ![img3.1](/Images/3.4.png)
 
 
 4. Generating Security Events Using Nmap
@@ -32,6 +34,9 @@ To simulate real-world network traffic, I ran a series of Nmap scans on the Kali
 Once the data was flowing, I used Elastic's powerful search capabilities to query the logs. For example, I ran queries to detect Nmap scan activities and other processes running with elevated privileges. This helped me understand how Elastic SIEM logs events in real time and how to quickly filter through massive amounts of data to isolate critical security events.
 To review security events and run queries, I navigated to the "Logs" section, found under the "Observations" tab on the left panel. This area became a hub for monitoring live data, allowing me to filter through logs and pinpoint key security incidents. It felt like diving into the heartbeat of the system, where every event—whether a scan, a login, or a service activity—was recorded in real time. With the tools available, I could easily isolate critical data and analyze the network's activity as it unfolded.
 
+![img3.1](/Images/5.1.png)
+![img3.1](/Images/5.2.png)
+
 
 
 
@@ -39,12 +44,17 @@ To review security events and run queries, I navigated to the "Logs" section, fo
 To visualize the collected security data, I created a custom dashboard in the Elastic web portal. This involved designing charts that plotted event counts over time, providing a clear, graphical representation of security incidents. The dashboard allowed me to monitor trends and spot anomalies, enhancing my ability to interpret and present security metrics.
 Click on the menu icon in the top-left corner, then navigate to “Analytics” and select “Dashboards.”
 
+    ![img3.1](/Images/6.1.png)
+
 
 
 
     To create a new dashboard, click "Create dashboard" and then "Create Visualization." Choose either “Area” or “Line” as your preferred visualization type. For the configuration, set the visualization to 
     "Area," use "Timestamp" for the horizontal axis, and "Count" for the vertical axis.
     Once you're satisfied with the settings, click the “Save” button to store the visualization and finalize the remaining configurations.
+
+    ![img3.1](/Images/6.2.png)
+
 
 
 
@@ -59,6 +69,8 @@ Finally, I configured alerts within the SIEM to trigger notifications when speci
     After configuring the remaining settings, click "Continue."
     Finally, click the “Create and enable rule” button to activate the alert.
     For instance, I created an Nmap alert, which triggers whenever an Nmap scan event is detected, executing the designated action automatically.
+
+    ![img3.1](/Images/7.1.png)
 
 
 
