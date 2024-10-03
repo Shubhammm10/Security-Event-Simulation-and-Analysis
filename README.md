@@ -34,8 +34,8 @@ To simulate real-world network traffic, I ran a series of Nmap scans on the Kali
 Once the data was flowing, I used Elastic's powerful search capabilities to query the logs. For example, I ran queries to detect Nmap scan activities and other processes running with elevated privileges. This helped me understand how Elastic SIEM logs events in real time and how to quickly filter through massive amounts of data to isolate critical security events.
 To review security events and run queries, I navigated to the "Logs" section, found under the "Observations" tab on the left panel. This area became a hub for monitoring live data, allowing me to filter through logs and pinpoint key security incidents. It felt like diving into the heartbeat of the system, where every event—whether a scan, a login, or a service activity—was recorded in real time. With the tools available, I could easily isolate critical data and analyze the network's activity as it unfolded.
 
-![img3.1](/Images/5.1.png)
-![img3.1](/Images/5.2.png)
+    ![img3.1](/Images/5.1.png)
+    ![img3.1](/Images/5.2.png)
 
 
 
